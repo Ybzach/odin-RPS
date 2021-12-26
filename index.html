@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class = "title center bold"><h1>Rock Paper Scissors</h1></div>
+    <div id = "play-area" class = " flex center-content">
+        <div id="player" class = " play-box border"> 
+            <div class = "center">Please choose your move:</div>
+            <div id = "choice-buttons" class="center flex flex-column center-content">
+                <button>Rock</button>
+                <button>Paper</button>
+                <button>Scissors</button>
+            </div>
+            <div class="hide player-choice bold center">Rock</div>
+        </div>
+        <div id="CPU" class="play-box border flex center-content">
+            <div class="hide player-choice bold center">Rock</div>
+        </div>
+    </div>
+    <div id="score-area" class=" flex center-content">
+        <div class="player-score border">
+            Player : <span class = "score">0</span>
+        </div>
+        <div class="CPU-score border">
+            CPU : <span class = "score">0</span>
+        </div>
+    </div>
 </body>
     <script src="script.js"></script>
 </html>
