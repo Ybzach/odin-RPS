@@ -9,9 +9,10 @@
 </head>
 <body>
     <div class = "title center bold"><h1>Rock Paper Scissors</h1></div>
-    <div id = "play-area" class = " flex center-content">
-        <div id="player" class = " play-box border"> 
-            <div class = "center">Please choose your move:</div>
+    <div id = "play-area" class = "flex center-content">
+        <div id="player" class = "rounded secondary-bg play-box"> 
+            <div class = "flex-top center"><h1><u>Player</u></h1></div>
+            <div class = "center"><h2>Please choose your move:</h2></div>
             <div id = "choice-buttons" class="center flex flex-column center-content">
                 <button>Rock</button>
                 <button>Paper</button>
@@ -19,16 +20,20 @@
             </div>
             <div class="hide player-choice bold center">Rock</div>
         </div>
-        <div id="CPU" class="play-box border flex center-content">
-            <div class="hide player-choice bold center">Rock</div>
+        <div id="play-again" class = "flex center-content">
+            <div id="ask-box" class = "hide"></div>
+        </div>
+        <div id="CPU" class="rounded secondary-bg play-box flex flex-column">
+            <div class="flex-center flex-top"><h1><u>CPU</u></h1></div>
+            <div id="CPU-move" class="player-choice bold flex-center">Rock</div>
         </div>
     </div>
-    <div id="score-area" class=" flex center-content">
-        <div class="player-score border">
-            Player : <span class = "score">0</span>
+    <div id="score-area" class="score flex center-content">
+        <div id="player-score" class= "secondary-bg">
+            0
         </div>
-        <div class="CPU-score border">
-            CPU : <span class = "score">0</span>
+        <div class="CPU-score">
+            0
         </div>
     </div>
 </body>

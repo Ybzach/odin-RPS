@@ -1,7 +1,13 @@
 * {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: lightgray;
 }
 
+body {
+    background-color:  #081016;
+    background-repeat: no-repeat;
+    height: 100%;
+}
 .center {
     text-align: center;
 }
@@ -19,6 +25,13 @@
     align-items: center;
 }
 
+.flex-top {
+    justify-self: flex-start;
+}
+
+.flex-center {
+    align-self: center;
+}
 .border {
     border-radius: 10px;
     border-color: black;
@@ -26,6 +39,13 @@
     padding: 10px 20px;
 }
 
+.secondary-bg {
+    background-color: #0e1d25;
+}
+
+.rounded {
+    border-radius: 50px;
+}
 .flex-column {
     flex-direction: column;
 }
@@ -34,6 +54,7 @@
     width: 500px;
     height : 400px;
 }
+
 #play-area{
     justify-content: space-between;
     width:1200px;
@@ -42,5 +63,35 @@
 #score-area {
     width: 1000px;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    font-size: 80px;
+}
+
+.score div{
+    margin: 20px 0px;
+    padding: 0px 30px;
+    background-color: darkgray;
+    color: #081016;
+    border-radius: 10px;
+}
+
+#player-score {
+
+}
+
+.win-glow {
+
+}
+
+.lose-glow {
+
+}
+
+
+
+#choice-buttons button{
+    color :#081016;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
 }
