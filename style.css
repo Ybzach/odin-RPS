@@ -29,9 +29,14 @@ body {
     justify-self: flex-start;
 }
 
-.flex-center {
+.align-center {
     align-self: center;
 }
+
+.justify-center {
+    justify-self: center;
+}
+
 .border {
     border-radius: 10px;
     border-color: black;
@@ -57,13 +62,52 @@ body {
 
 #play-area{
     justify-content: space-between;
-    width:1200px;
+    width: 1200px;
     margin: auto;
 }
-#score-area {
-    width: 1000px;
+
+#player-activity {
     margin: auto;
-    justify-content: space-evenly;
+    height: 300px;
+}
+
+#CPU-activity {
+    margin: auto;
+    height: 300px;
+}
+
+#player-activity h2{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.player-choice {
+    font-size: 50px;
+}
+
+#name {
+    justify-self:flex-start;
+    margin-bottom: 0;
+    font-size:50px;
+    text-decoration: underline;
+}
+
+#player {
+    justify-content: center;
+}
+
+#player-move {
+    
+}
+#CPU-move {
+    align-self: center;
+    justify-self: center;
+}
+
+#score-area {
+    width: 800px;
+    margin: auto;
+    justify-content: space-between;
     font-size: 80px;
 }
 
@@ -86,8 +130,6 @@ body {
 .lose-glow {
 
 }
-
-
 
 #choice-buttons button{
     color :#081016;

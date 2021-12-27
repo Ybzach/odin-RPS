@@ -32,8 +32,8 @@ function playRound(e) {
 
 function updateCounter(e){
     const winner = playRound(e);
-    const playerScoreDiv = document.querySelector(".player-score");
-    const CPUScoreDiv = document.querySelector(".CPU-score");
+    const playerScoreDiv = document.getElementById("player-score");
+    const CPUScoreDiv = document.getElementById("CPU-score");
     let playerScore = parseInt(playerScoreDiv.innerText);
     let CPUScore = parseInt(CPUScoreDiv.innerText); 
 
@@ -44,6 +44,10 @@ function updateCounter(e){
         CPUScore++;
         CPUScoreDiv.textContent = `${CPUScore}`;
     }
+}
+
+function updateGlow(winner){
+
 }
 
 function main(){
