@@ -55,6 +55,11 @@ body {
     flex-direction: column;
 }
 
+#title{
+    font-size: 60px;
+    margin-top: 15px;
+}
+
 .play-box{
     width: 500px;
     height : 400px;
@@ -64,6 +69,7 @@ body {
     justify-content: space-between;
     width: 1200px;
     margin: auto;
+    margin-top: 50px;
 }
 
 #player-activity {
@@ -87,9 +93,10 @@ body {
 
 #name {
     justify-self:flex-start;
+    margin-top:15px;
     margin-bottom: 0;
     font-size:50px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 #player {
@@ -99,6 +106,7 @@ body {
 #player-move {
     
 }
+
 #CPU-move {
     align-self: center;
     justify-self: center;
@@ -109,31 +117,51 @@ body {
     margin: auto;
     justify-content: space-between;
     font-size: 80px;
+    margin-top: 10px;
 }
 
 .score div{
     margin: 20px 0px;
     padding: 0px 30px;
-    background-color: darkgray;
     color: #081016;
     border-radius: 10px;
 }
 
 #player-score {
+    background-color: darkgray;
+}
 
+#CPU-score {
+    background-color: darkgray;
+}
+
+.glow {
+    box-shadow:0 0 20px #0081b4;
 }
 
 .win-glow {
-
+    box-shadow:0 0 20px #00ff95;
 }
 
 .lose-glow {
-
+    box-shadow:0 0 20px #ff0000;
 }
 
 #choice-buttons button{
+    color :rgb(212, 212, 212);
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 25px;
+    border-width:3px;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+#ask-box button{
     color :#081016;
     width: 120px;
     height: 50px;
     margin: 10px;
+    border-radius: 25px;
 }
